@@ -1,0 +1,101 @@
+.gradient-background{
+    -fx-background-color:linear-gradient(from 25% 25% to 100% 100%, #D9AFD9,#97D9E1);
+}
+.line-color{
+    -fx-background-color:#f3abb5
+}
+.container{
+    -fx-background-color:rgba(255,255,255,0.3);
+    -fx-background-radius:10;
+}
+.shadow{
+    -fx-effect:dropshadow(three-pass-box,rgba(0,0,0,0.2),10.0,0.0,0.0,10.0);
+}
+.axis{
+    -fx-stroke:#fff;
+    -fx-fill:#fff;
+    -fx-font-size:24;
+    -fx-tich-label-fill:#fff;
+}
+.pie-part-label{
+    -fx-fill:#ffd6dc;
+    -fx-stroke:#ffd6dc;
+    -fx-font-size:15;
+}
+.chart-pie-label-line{
+    -fx-fill:linear-gradient(from 25% 25% to 100% 100%, #dd69dd,#75c7d0);
+    -fx-stroke:linear-gradient(from 25% 25% to 100% 100%, #D9AFD9,#75c7d0);
+}
+.default-color0.chart-pie{-fx-pie-color: transparent;}
+.default-color1.chart-pie{-fx-pie-color: transparent;}
+.default-color2.chart-pie{-fx-pie-color: transparent;}
+.default-color3.chart-pie{-fx-pie-color: transparent;}
+.default-color4.chart-pie{-fx-pie-color: transparent;}
+.default-color5.chart-pie{-fx-pie-color: transparent;}
+.selected-button-container{
+    -fx-background-color:rgba(255,255,255,0.15);
+}
+.button-container-mouse-moved:hover{
+    -fx-background-color:rgba(255,255,255,0.15);
+}
+.round-box{
+    -fx-border-color:linear-gradient(from 25% 25% to 100% 100%, #dd69dd,#75c7d0);
+    -fx-background-radius:100%;
+    -fx-border-radius:100%;
+    -fx-border-width:3px;
+}
+.search-box{
+    -fx-border-color:linear-gradient(from 25% 25% to 100% 100%, #dd69dd,#75c7d0);
+    -fx-border-radius:12px;
+}
+/*This is a neat custom code*/
+  /* .text-area{
+    text-area-background:#ffffff00;
+} 
+ .text-area .content{
+    -fx-background-color:text-area-background;
+}   */
+.text-area .content{
+    -fx-background-color:transparent;
+}
+.scroll-bar:horizontal .increment-arrow,
+.scroll-bar:horizontal .decrement-arrow,
+.scroll-bar:horizontal .increment-button,
+.scroll-bar:horizontal .decrement-button,
+.scroll-bar:vertical .increment-arrow,
+.scroll-bar:vertical .decrement-arrow,
+.scroll-bar:vertical .increment-button,
+.scroll-bar:vertical .decrement-button{
+    -fx-padding:0;
+    -fx-opacity: 0;
+}
+.scroll-bar:vertical,
+.scroll-bar:vertical .track,
+.scroll-bar:vertical .track-background,
+.scroll-bar:horizontal,
+.scroll-bar:horizontal .track,
+.scroll-bar:horizontal .track-background {
+    -fx-background-color: transparent;
+}
+.scroll-bar:vertical .thumb{
+    -fx-background-color: transparent;
+}
+.scroll-bar:horizontal .thumb {
+    -fx-background-color:  transparent;
+}
+.line-separator{
+    -fx-stroke:linear-gradient(from 25% 25% to 100% 100%, #dd69dd,#75c7d0);;
+}
+.outercircle-color{
+    -fx-fill:linear-gradient(#d9afd9,#97d9e1);
+    -fx-stroke:linear-gradient(#d9afd9,#97d9e1);
+    -fx-stroke-width:2.5;
+}
+.innercircle-color{
+    -fx-fill:radial-gradient(radius -30,#7ec7e0,#ffffff);
+    /* -fx-fill:radial-gradient(focus-angle 0deg, focus-distance 1000%,radius 0.5,#7ec7e0,#ffffff); */
+    -fx-stroke:#ffffff;
+    -fx-stroke-width:2.5;
+}
+
+

@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.ProgressIndicator?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+
+<VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox prefHeight="205.0" prefWidth="959.0" styleClass="container">
+         <children>
+            <Label styleClass="shadow" text="Social Media" textFill="WHITE">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <font>
+                  <Font name="Tw Cen MT Condensed Bold" size="19.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="200.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="158.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+                                 <image>
+                                    <Image url="@../../../../Icons/icons8_edged_faces_display_modes_96px.png" />
+                                 </image>
+                              </ImageView>
+                              <Label styleClass="shadow" text="Registered Users" textFill="WHITE">
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                                 <font>
+                                    <Font name="Tw Cen MT Condensed Bold" size="19.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="100.0" styleClass="round-box">
+                           <children>
+                              <ProgressIndicator prefHeight="100.0" prefWidth="100.0" progress="0.56" radius="42.0" style="-fx-progress-color: #fff;" HBox.hgrow="ALWAYS">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </ProgressIndicator>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label alignment="CENTER_RIGHT" styleClass="shadow" text="56%" textFill="WHITE">
+                                 <font>
+                                    <Font name="Tw Cen MT Condensed Bold" size="19.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <padding>
+                                    <Insets right="3.0" />
+                                 </padding>
+                              </Label>
+                              <Label styleClass="shadow" text="of goal" textFill="WHITE">
+                                 <font>
+                                    <Font name="Tw Cen MT Condensed Bold" size="19.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <Line endX="-100.0" endY="135.29290771484375" startX="-100.0">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                     <stroke>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.8666666746139526" green="0.4117647111415863" blue="0.8666666746139526" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.9974554707379134">
+                                 <color>
+                                    <Color red="0.4588235318660736" green="0.7803921699523926" blue="0.8156862854957581" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.4588235318660736" green="0.7803921699523926" blue="0.8156862854957581" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </stroke>
+                  </Line>
+                  <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="158.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="158.0" prefWidth="200.0">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+                                       <image>
+                                          <Image url="@../../../../Icons/icons8_Instagram_96px.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label styleClass="shadow" text="Instagram Followers" textFill="WHITE">
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                       <font>
+                                          <Font name="Tw Cen MT Condensed Bold" size="19.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="100.0" styleClass="round-box">
+                                 <children>
+                                    <ProgressIndicator prefHeight="100.0" prefWidth="100.0" progress="0.71" radius="42.0" style="-fx-progress-color: #fff;" HBox.hgrow="ALWAYS">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </ProgressIndicator>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Label alignment="CENTER_RIGHT" styleClass="shadow" text="71%" textFill="WHITE">
+                                       <font>
+                                          <Font name="Tw Cen MT Condensed Bold" size="19.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                       <padding>
+                                          <Insets right="3.0" />
+                                       </padding>
+                                    </Label>
+                                    <Label styleClass="shadow" text="of goal" textFill="WHITE">
+                                       <font>
+                                          <Font name="Tw Cen MT Condensed Bold" size="19.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+                  <Line endX="-100.0" endY="135.29290771484375" layoutX="291.0" layoutY="21.0" startX="-100.0">
+                     <stroke>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.8666666746139526" green="0.4117647111415863" blue="0.8666666746139526" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.9974554707379134">
+                                 <color>
+                                    <Color red="0.4588235318660736" green="0.7803921699523926" blue="0.8156862854957581" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.4588235318660736" green="0.7803921699523926" blue="0.8156862854957581" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </stroke>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Line>
+                  <VBox alignment="CENTER" layoutX="160.0" layoutY="10.0" prefHeight="158.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="158.0" prefWidth="200.0">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+                                       <image>
+                                          <Image url="@../../../../Icons/icons8_facebook_f_96px.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label styleClass="shadow" text="Facebook followers" textFill="WHITE">
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                       <font>
+                                          <Font name="Tw Cen MT Condensed Bold" size="19.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="100.0" styleClass="round-box">
+                                 <children>
+                                    <ProgressIndicator prefHeight="100.0" prefWidth="100.0" progress="0.23" radius="42.0" style="-fx-progress-color: #fff;" HBox.hgrow="ALWAYS">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </ProgressIndicator>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Label alignment="CENTER_RIGHT" styleClass="shadow" text="23%" textFill="WHITE">
+                                       <font>
+                                          <Font name="Tw Cen MT Condensed Bold" size="19.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                       <padding>
+                                          <Insets right="3.0" />
+                                       </padding>
+                                    </Label>
+                                    <Label styleClass="shadow" text="of goal" textFill="WHITE">
+                                       <font>
+                                          <Font name="Tw Cen MT Condensed Bold" size="19.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets left="200.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </VBox>
+      <HBox spacing="20.0">
+         <VBox.margin>
+            <Insets top="15.0" />
+         </VBox.margin>
+         <children>
+            <VBox maxWidth="-Infinity" prefHeight="300.0" prefWidth="528.0" styleClass="container" HBox.hgrow="ALWAYS">
+               <children>
+                  <Label styleClass="shadow" text="Work Time" textFill="WHITE">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <font>
+                        <Font name="Tw Cen MT Condensed Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <LineChart fx:id="lineChart" legendVisible="false" styleClass="shadow" stylesheets="@style.css">
+                     <xAxis>
+                        <CategoryAxis side="BOTTOM" />
+                     </xAxis>
+                     <yAxis>
+                        <NumberAxis side="LEFT" />
+                     </yAxis>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </LineChart>
+               </children>
+            </VBox>
+            <VBox layoutX="10.0" layoutY="10.0" maxWidth="-Infinity" prefHeight="300.0" prefWidth="404.0" styleClass="container" HBox.hgrow="ALWAYS">
+               <children>
+                  <Label styleClass="shadow" text="Sales" textFill="WHITE">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <font>
+                        <Font name="Tw Cen MT Condensed Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <PieChart fx:id="pieChart" legendVisible="false" styleClass="shadow" stylesheets="@style.css" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</VBox>

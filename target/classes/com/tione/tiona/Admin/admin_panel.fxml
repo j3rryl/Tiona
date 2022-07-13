@@ -1,0 +1,700 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.ProgressIndicator?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="admin_panel" prefHeight="890.0" prefWidth="1300.0" styleClass="gradient-background" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tione.tiona.Admin.AdminPanel">
+   <top>
+      <HBox alignment="CENTER" prefHeight="60.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" prefHeight="60.0" prefWidth="249.0" text="ADMIN DASHBOARD" textFill="WHITE">
+               <font>
+                  <Font name="Tw Cen MT Condensed" size="30.0" />
+               </font>
+            </Label>
+            <Line endX="800.0" startX="-118.1667251586914" startY="-3.178914312229608E-6" HBox.hgrow="ALWAYS">
+               <stroke>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.8157894611358643" green="0.5211988091468811" blue="0.8157894611358643" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.40223631262779236" green="0.6954867839813232" blue="0.7280701994895935" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </stroke>
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.8666666746139526" green="0.4117647111415863" blue="0.8666666746139526" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.9974554707379134">
+                           <color>
+                              <Color red="0.4588235318660736" green="0.7803921699523926" blue="0.8156862854957581" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.4588235318660736" green="0.7803921699523926" blue="0.8156862854957581" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Line>
+            <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Icons/icons8_settings_96px.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="459.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Icons/icons8_heart_96px.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="10.0" right="20.0" />
+               </HBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="10.0" />
+         </BorderPane.margin>
+      </HBox>
+   </top>
+   <left>
+      <VBox prefHeight="810.0" prefWidth="228.0" styleClass="container" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" />
+         </BorderPane.margin>
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Group styleClass="shadow" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Circle radius="35.0" strokeType="INSIDE">
+                           <fill>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color red="0.8509804010391235" green="0.686274528503418" blue="0.8509804010391235" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="0.5921568870544434" green="0.8509804010391235" blue="0.8823529481887817" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </fill>
+                           <stroke>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color red="0.8509804010391235" green="0.686274528503418" blue="0.8509804010391235" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="0.5921568870544434" green="0.8509804010391235" blue="0.8823529481887817" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </stroke>
+                        </Circle>
+                        <Circle radius="30.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.5">
+                           <fill>
+                              <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color red="0.4941176474094391" green="0.7803921699523926" blue="0.8784313797950745" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="1.0" green="1.0" blue="1.0" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </RadialGradient>
+                           </fill>
+                        </Circle>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                  </Group>
+                  <VBox prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                     <children>
+                        <Label styleClass="shadow" text="Jeremy Munroe" textFill="WHITE">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                           <font>
+                              <Font name="Tw Cen MT Condensed Bold" size="19.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="20.0" layoutY="10.0" styleClass="shadow" text="Software Developer" textFill="WHITE">
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                           <font>
+                              <Font name="Tw Cen MT Condensed Bold" size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <Line endX="138.9595489501953" startX="-130.0">
+               <stroke>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.8666666746139526" green="0.4117647111415863" blue="0.8666666746139526" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.994910941475827">
+                           <color>
+                              <Color red="0.4588235318660736" green="0.7803921699523926" blue="0.8156862854957581" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.4588235318660736" green="0.7803921699523926" blue="0.8156862854957581" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </stroke>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+               </VBox.margin>
+            </Line>
+            <VBox prefHeight="513.0" prefWidth="301.0">
+               <children>
+                  <HBox fx:id="admin_dashboard" alignment="CENTER_LEFT" onMouseClicked="#onDashboardClicked" prefHeight="60.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+                           <HBox.margin>
+                              <Insets left="30.0" />
+                           </HBox.margin>
+                           <image>
+                              <Image url="@../../../../Icons/icons8_combo_chart_96px.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER" styleClass="shadow" text="Dashboard" textFill="WHITE">
+                           <font>
+                              <Font name="Tw Cen MT Condensed" size="25.0" />
+                           </font>
+                           <padding>
+                              <Insets left="4.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <styleClass>
+                        <String fx:value="button-container-mouse-moved" />
+                        <String fx:value="selected-button-container" />
+                     </styleClass>
+                  </HBox>
+                  <HBox fx:id="admin_inbox" alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" onMouseClicked="#onInboxClicked" prefHeight="60.0" prefWidth="200.0" styleClass="button-container-mouse-moved">
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+                           <HBox.margin>
+                              <Insets left="30.0" />
+                           </HBox.margin>
+                           <image>
+                              <Image url="@../../../../Icons/icons8_postal_96px.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER" styleClass="shadow" text="Inbox" textFill="WHITE">
+                           <font>
+                              <Font name="Tw Cen MT Condensed" size="25.0" />
+                           </font>
+                           <padding>
+                              <Insets left="4.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </HBox>
+                  <HBox fx:id="admin_suggestions" alignment="CENTER_LEFT" layoutX="10.0" layoutY="70.0" onMouseClicked="#onSuggestionsClicked" prefHeight="60.0" prefWidth="200.0" styleClass="button-container-mouse-moved">
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+                           <HBox.margin>
+                              <Insets left="30.0" />
+                           </HBox.margin>
+                           <image>
+                              <Image url="@../../../../Icons/icons8_light_96px.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER" styleClass="shadow" text="Suggestions" textFill="WHITE">
+                           <font>
+                              <Font name="Tw Cen MT Condensed" size="25.0" />
+                           </font>
+                           <padding>
+                              <Insets left="4.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </HBox>
+                  <HBox fx:id="admin_meetings" alignment="CENTER_LEFT" layoutX="10.0" layoutY="130.0" onMouseClicked="#onMeetingsClicked" prefHeight="60.0" prefWidth="200.0" styleClass="button-container-mouse-moved">
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+                           <HBox.margin>
+                              <Insets left="30.0" />
+                           </HBox.margin>
+                           <image>
+                              <Image url="@../../../../Icons/icons8_timeline_week_96px.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER" styleClass="shadow" text="Meetings" textFill="WHITE">
+                           <font>
+                              <Font name="Tw Cen MT Condensed" size="25.0" />
+                           </font>
+                           <padding>
+                              <Insets left="4.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </HBox>
+                  <HBox fx:id="admin_projects" alignment="CENTER_LEFT" layoutX="10.0" layoutY="190.0" onMouseClicked="#onProjectsClicked" prefHeight="60.0" prefWidth="200.0" styleClass="button-container-mouse-moved">
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+                           <HBox.margin>
+                              <Insets left="30.0" />
+                           </HBox.margin>
+                           <image>
+                              <Image url="@../../../../Icons/icons8_project_96px.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER" styleClass="shadow" text="Projects" textFill="WHITE">
+                           <font>
+                              <Font name="Tw Cen MT Condensed" size="25.0" />
+                           </font>
+                           <padding>
+                              <Insets left="4.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </HBox>
+                  <HBox fx:id="admin_notes" alignment="CENTER_LEFT" layoutX="10.0" layoutY="250.0" onMouseClicked="#onNotesClicked" prefHeight="60.0" prefWidth="200.0" styleClass="button-container-mouse-moved">
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+                           <HBox.margin>
+                              <Insets left="30.0" />
+                           </HBox.margin>
+                           <image>
+                              <Image url="@../../../../Icons/icons8_create_document_96px.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER" styleClass="shadow" text="Notes And Tasks" textFill="WHITE">
+                           <font>
+                              <Font name="Tw Cen MT Condensed" size="25.0" />
+                           </font>
+                           <padding>
+                              <Insets left="4.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </HBox>
+                  <HBox fx:id="admin_clients" alignment="CENTER_LEFT" layoutX="10.0" layoutY="310.0" onMouseClicked="#onClientsClicked" prefHeight="60.0" prefWidth="200.0" styleClass="button-container-mouse-moved">
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+                           <HBox.margin>
+                              <Insets left="30.0" />
+                           </HBox.margin>
+                           <image>
+                              <Image url="@../../../../Icons/icons8_street_view_96px_1.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER" styleClass="shadow" text="Clients" textFill="WHITE">
+                           <font>
+                              <Font name="Tw Cen MT Condensed" size="25.0" />
+                           </font>
+                           <padding>
+                              <Insets left="4.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <VBox fx:id="admin_maindashboard" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: transparent;" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="205.0" prefWidth="959.0" styleClass="container">
+               <children>
+                  <Label styleClass="shadow" text="Social Media" textFill="WHITE">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <font>
+                        <Font name="Tw Cen MT Condensed Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <HBox prefHeight="200.0" prefWidth="200.0" spacing="20.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="158.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+                                       <image>
+                                          <Image url="@../../../../Icons/icons8_edged_faces_display_modes_96px.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label styleClass="shadow" text="Registered Users" textFill="WHITE">
+                                       <padding>
+                                          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                       </padding>
+                                       <font>
+                                          <Font name="Tw Cen MT Condensed Bold" size="19.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="100.0" styleClass="round-box">
+                                 <children>
+                                    <ProgressIndicator prefHeight="100.0" prefWidth="100.0" progress="0.56" radius="42.0" style="-fx-progress-color: #fff;" HBox.hgrow="ALWAYS">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </ProgressIndicator>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Label alignment="CENTER_RIGHT" styleClass="shadow" text="56%" textFill="WHITE">
+                                       <font>
+                                          <Font name="Tw Cen MT Condensed Bold" size="19.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                       <padding>
+                                          <Insets right="3.0" />
+                                       </padding>
+                                    </Label>
+                                    <Label styleClass="shadow" text="of goal" textFill="WHITE">
+                                       <font>
+                                          <Font name="Tw Cen MT Condensed Bold" size="19.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <Line endX="-100.0" endY="135.29290771484375" startX="-100.0">
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </HBox.margin>
+                           <stroke>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color red="0.8666666746139526" green="0.4117647111415863" blue="0.8666666746139526" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="0.9974554707379134">
+                                       <color>
+                                          <Color red="0.4588235318660736" green="0.7803921699523926" blue="0.8156862854957581" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="0.4588235318660736" green="0.7803921699523926" blue="0.8156862854957581" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </stroke>
+                        </Line>
+                        <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="158.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <VBox alignment="CENTER" prefHeight="158.0" prefWidth="200.0">
+                                 <children>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+                                             <image>
+                                                <Image url="@../../../../Icons/icons8_Instagram_96px.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label styleClass="shadow" text="Instagram Followers" textFill="WHITE">
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                             <font>
+                                                <Font name="Tw Cen MT Condensed Bold" size="19.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="100.0" styleClass="round-box">
+                                       <children>
+                                          <ProgressIndicator prefHeight="100.0" prefWidth="100.0" progress="0.71" radius="42.0" style="-fx-progress-color: #fff;" HBox.hgrow="ALWAYS">
+                                             <HBox.margin>
+                                                <Insets />
+                                             </HBox.margin>
+                                          </ProgressIndicator>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <Label alignment="CENTER_RIGHT" styleClass="shadow" text="71%" textFill="WHITE">
+                                             <font>
+                                                <Font name="Tw Cen MT Condensed Bold" size="19.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets />
+                                             </HBox.margin>
+                                             <padding>
+                                                <Insets right="3.0" />
+                                             </padding>
+                                          </Label>
+                                          <Label styleClass="shadow" text="of goal" textFill="WHITE">
+                                             <font>
+                                                <Font name="Tw Cen MT Condensed Bold" size="19.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                        <Line endX="-100.0" endY="135.29290771484375" layoutX="291.0" layoutY="21.0" startX="-100.0">
+                           <stroke>
+                              <LinearGradient endX="1.0" endY="1.0">
+                                 <stops>
+                                    <Stop>
+                                       <color>
+                                          <Color red="0.8666666746139526" green="0.4117647111415863" blue="0.8666666746139526" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="0.9974554707379134">
+                                       <color>
+                                          <Color red="0.4588235318660736" green="0.7803921699523926" blue="0.8156862854957581" />
+                                       </color>
+                                    </Stop>
+                                    <Stop offset="1.0">
+                                       <color>
+                                          <Color red="0.4588235318660736" green="0.7803921699523926" blue="0.8156862854957581" />
+                                       </color>
+                                    </Stop>
+                                 </stops>
+                              </LinearGradient>
+                           </stroke>
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </HBox.margin>
+                        </Line>
+                        <VBox alignment="CENTER" layoutX="160.0" layoutY="10.0" prefHeight="158.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <VBox alignment="CENTER" prefHeight="158.0" prefWidth="200.0">
+                                 <children>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+                                             <image>
+                                                <Image url="@../../../../Icons/icons8_facebook_f_96px.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label styleClass="shadow" text="Facebook followers" textFill="WHITE">
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                             <font>
+                                                <Font name="Tw Cen MT Condensed Bold" size="19.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="100.0" styleClass="round-box">
+                                       <children>
+                                          <ProgressIndicator prefHeight="100.0" prefWidth="100.0" progress="0.23" radius="42.0" style="-fx-progress-color: #fff;" HBox.hgrow="ALWAYS">
+                                             <HBox.margin>
+                                                <Insets />
+                                             </HBox.margin>
+                                          </ProgressIndicator>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <Label alignment="CENTER_RIGHT" styleClass="shadow" text="23%" textFill="WHITE">
+                                             <font>
+                                                <Font name="Tw Cen MT Condensed Bold" size="19.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets />
+                                             </HBox.margin>
+                                             <padding>
+                                                <Insets right="3.0" />
+                                             </padding>
+                                          </Label>
+                                          <Label styleClass="shadow" text="of goal" textFill="WHITE">
+                                             <font>
+                                                <Font name="Tw Cen MT Condensed Bold" size="19.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                       <padding>
+                                          <Insets bottom="10.0" />
+                                       </padding>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="200.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </VBox>
+            <HBox spacing="20.0">
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+               <children>
+                  <VBox maxWidth="-Infinity" prefHeight="300.0" prefWidth="528.0" styleClass="container" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label styleClass="shadow" text="Work Time" textFill="WHITE">
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                           <font>
+                              <Font name="Tw Cen MT Condensed Bold" size="19.0" />
+                           </font>
+                        </Label>
+                        <LineChart fx:id="lineChart" legendVisible="false" styleClass="shadow" stylesheets="@style.css">
+                           <xAxis>
+                              <CategoryAxis side="BOTTOM" />
+                           </xAxis>
+                           <yAxis>
+                              <NumberAxis side="LEFT" />
+                           </yAxis>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </LineChart>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="10.0" layoutY="10.0" maxWidth="-Infinity" prefHeight="300.0" prefWidth="404.0" styleClass="container" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label styleClass="shadow" text="Sales" textFill="WHITE">
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                           <font>
+                              <Font name="Tw Cen MT Condensed Bold" size="19.0" />
+                           </font>
+                        </Label>
+                        <PieChart fx:id="pieChart" legendVisible="false" styleClass="shadow" stylesheets="@style.css" />
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+         <BorderPane.margin>
+            <Insets right="20.0" />
+         </BorderPane.margin>
+      </VBox>
+   </center>
+</BorderPane>
