@@ -10,10 +10,6 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="fontawesomefx-8.2" level="project" />
-    <orderEntry type="library" name="charm-glisten-6.0.2" level="project" />
-    <orderEntry type="library" name="util-4.0.1.1" level="project" />
-    <orderEntry type="library" name="firebase-admin-8.1.0" level="project" />
     <orderEntry type="library" name="Maven: org.openjfx:javafx-controls:17.0.1" level="project" />
     <orderEntry type="library" name="Maven: org.openjfx:javafx-controls:win:17.0.1" level="project" />
     <orderEntry type="library" name="Maven: org.openjfx:javafx-graphics:17.0.1" level="project" />
@@ -107,5 +103,8 @@
     <orderEntry type="library" name="Maven: io.netty:netty-handler:4.1.67.Final" level="project" />
     <orderEntry type="library" name="Maven: io.netty:netty-resolver:4.1.67.Final" level="project" />
     <orderEntry type="library" name="Maven: io.netty:netty-transport:4.1.67.Final" level="project" />
+    <orderEntry type="library" name="charm-glisten-6.0.2" level="project" />
+    <orderEntry type="library" name="firebase-admin-8.1.0" level="project" />
+    <orderEntry type="library" name="fontawesomefx-8.2" level="project" />
   </component>
 </module>
